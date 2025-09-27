@@ -86,7 +86,7 @@ curl -X GET "http://127.0.0.1:8000/users/" -H "accept: application/json"
 curl -X POST "http://127.0.0.1:8000/users/" \
        -H "accept: application/json" \
        -H "Content-Type: application/json" \
-       -d '{"id": 3, "name": "Charlie", "email": "charlie@example.com"}'
+       -d '{"id": 3, "name": "cc", "email": "cc@example.com"}'
 ```
 **Response:**
 ```json
