@@ -1,6 +1,6 @@
 # Simple Users API with FastAPI & SQLite
 
-This project is a professional RESTful API for managing users, built using FastAPI, SQLAlchemy, and SQLite. It demonstrates clean architecture, dependency injection, and best practices for Python web APIs.
+FastAPi CRUD project is a RESTful API for managing users, built using FastAPI, SQLAlchemy, and SQLite. It demonstrates clean architecture, dependency injection, and best practices for Python web APIs.
 
 ## Features
 
@@ -74,8 +74,8 @@ curl -X GET "http://127.0.0.1:8000/users/" -H "accept: application/json"
 **Response:**
 ```json
 [
-   {"id": 1, "name": "Alice", "email": "alice@example.com"},
-   {"id": 2, "name": "Bob", "email": "bob@example.com"}
+   {"id": 1, "name": "gg", "email": "gg@example.com"},
+   {"id": 2, "name": "kk", "email": "kk@example.com"}
 ]
 ```
 
@@ -92,7 +92,7 @@ curl -X POST "http://127.0.0.1:8000/users/" \
 ```json
 {
    "message": "User added successfully",
-   "user": {"id": 3, "name": "Charlie", "email": "charlie@example.com"}
+   "user": {"id": 3, "name": "cc", "email": "cc@example.com"}
 }
 ```
 
@@ -103,13 +103,13 @@ curl -X POST "http://127.0.0.1:8000/users/" \
 curl -X PUT "http://127.0.0.1:8000/users/3" \
        -H "accept: application/json" \
        -H "Content-Type: application/json" \
-       -d '{"id": 3, "name": "Charles", "email": "charles@example.com"}'
+       -d '{"id": 3, "name": "ccb", "email": "ccb@example.com"}'
 ```
 **Response:**
 ```json
 {
    "message": "User updated successfully",
-   "user": {"id": 3, "name": "Charles", "email": "charles@example.com"}
+   "user": {"id": 3, "name": "ccb", "email": "ccb@example.com"}
 }
 ```
 
@@ -144,7 +144,3 @@ curl -X DELETE "http://127.0.0.1:8000/users/3" -H "accept: application/json"
 - For database schema changes, delete `users.db` and restart the server to recreate tables.
 
 ---
-
-## License
-
-MIT License
